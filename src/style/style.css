@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(200, 200, 206, 0.62) -10.12%, rgba(255, 254, 254, 0.67) 100%) no-repeat;
+}
+
+header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 5rem;
+    background-color: #504ECD;
+    color: #ffffff;
+}
+
+header .nomeApp {
+    font-size: 60px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#pagina_Recados{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1rem 0 1rem 0;
+}
+
+.folha_Recado{
+    gap: .5rem;
+    box-shadow: 10px 10px 10px #b2b2c5;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.folha_Recado p {
+    padding: 0.7rem 1rem 0.8rem 1rem;
+}
+
+.icones_Footer{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+header a {
+    font-size: 20px;
+}
+
+#menuPrincipal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer {
+    color: #ffffff;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+    position: fixed;
+    width: 100%;
+    background-color: #504ECD;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#conteiner_Principal {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+#login {
+    display: flex;
+    background-color: #504ECD;
+    padding: 5rem 10rem 10rem 10rem;
+    border-radius: 0px 10px 10px 0;
+    gap: 1rem;
+}
+
+#login h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#login input {
+    font-weight: 400;
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+}
+
+#login label {
+    font-weight: 400;
+    color: #D9D9D9;
+    font-weight: lighter;
+    margin-top: 2rem;
+}
+
+button {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    text-shadow: none;
+    height: 2.4rem;
+    width: 9rem;
+    margin-left: 1.2rem;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #D9D9D9;
+    color: #504ECD;
+    border: 1px solid #5e5ce7;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+a {
+    color: #ffffff;
+    font-size: .9rem;
+    margin-left: 4rem;
+    font-weight: lighter;
+}
+
+a:hover {
+    color: #D9D9D9;
+    transform: scale(0.9);
+    transition: all 0.3s;
+}
+
+#conteiner_Form_Button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteiner_Form_Button_Cadastro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteiner_Form_Button a {
+    margin-left: 1rem;
+}
+
+#conteiner_Form_Button_Cadastro .botao_voltar {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#conteiner_Form_Label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
