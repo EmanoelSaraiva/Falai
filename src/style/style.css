@@ -193,11 +193,93 @@ a:hover {
 }
 
 
-
 #conteiner_Form_Label {
     display: flex;
     flex-direction: column;
     margin-bottom: 2.2rem;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+/* Estilizaçao do modal */
+
+.modal{
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.centeudoModalRecado{
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 3%;
+}
+
+.cabecalhoModal{
+    padding: 1px 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #D9D9D9;
+    background-color: #504ECD;
+    border-radius: 8px 8px 0 0;
+    color: #ffffff;
+}
+
+.cabecalhoModalFechar{
+    margin-left: 2rem !important;
+}
+
+.cabecalhoModalFechar img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    filter: invert(1);
+}
+
+.corpoModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpoModal button{
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    background-color: rgba(200, 200, 206, 0.62);
+}
+
+#paginacaoRecados{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 15%;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    bottom: 5rem;
+}
+
+#paginacaoRecados button{
+    height: 2.4rem;
+    width: 5rem;
+}
+
+#paginacaoRecados p a{
+    color: black !important;
+    cursor: pointer;
+}
+
+#paginacaoRecados p {
+    display: flex;
 }
