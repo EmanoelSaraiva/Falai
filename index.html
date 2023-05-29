@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/src/style/style.css">
     <title>Falaí</title>
 </head>
@@ -14,28 +15,28 @@
         <div id="conteiner_Imagem">
             <img src="/src/image/imagem_organizacao.svg" alt="imagem organização" srcset="">
         </div>
-        <form id="login">
+        <form id="login" onsubmit="entrar(event)">
             <h1>Login</h1>
-
-            <div id="conteiner_Form_Label">
-                
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="emailLogin" placeholder="exemplo@gmail.com" required>
-                
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senhaLogin" placeholder="*********" required>
-                    <a href="#" id="esqueci_Senha">Esqueci minha <strong>senha</strong></a>
-                
-
-            </div>
-
-            <div id="conteiner_Form_Button">
-                <button type="submit" onclick="logar()">Entrar</button>
-                <a href="/src/cadastro.html" id="link_Cadastrar">Cadastrar</a>
-            </div>
-
+                <div id="conteiner_Form_Label">
+                    
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="emailLogin" placeholder="exemplo@gmail.com" required>
+                    
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senhaLogin" placeholder="*********" required>
+                        <a href="#" id="esqueci_Senha">Esqueci minha <strong>senha</strong></a>
+                    
+    
+                </div>
+    
+                <div id="conteiner_Form_Button">
+                    <button>Entrar</button>
+                    <a href="/src/cadastro.html" id="link_Cadastrar">Cadastrar</a>
+                </div>  
         </form>
     </div>
+
+    <script src="./src/script/login.js"></script>
 </body>
 
 </html>

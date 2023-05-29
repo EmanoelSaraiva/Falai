@@ -5,18 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <title>Falaí - Home</title>
 </head>
 
 <body>
     <header class="headerPadrao">
-        <h1 class="nomeApp">Falaí</h1>
+        <h1 class="nomeApp">Falaí <span id="usuarioLogado"></span></h1>
         <nav id="menuPrincipal">
+            <a onclick="abrirCadastroRecado('telaRecado')">Novo Recado</a>
             <a href="../index.html">Sair</a>
-            <a href="#">Novo Recado</a>
         </nav>
     </header>
+
+    <div id="telaRecado" class="modal">
+        <div class="centeudoModalRecado">
+            <div class="cabecalhoModal">
+                <h1>Cadastro Recado</h1>
+                <a class="cabecalhoModalFechar" onclick="fecharModal('telaRecado')"><img src="/src/image/icons8-fechar.svg" alt="icone fechar"></a>
+            </div>
+            <div class="corpoModal">
+                <form onsubmit="criarRecado(event)">
+                    <label for="tituloRecado">Título: </label>
+                    <input type="text" id="tituloRecado" placeholder="Titulo do Recado">
+                    <label for="descricaoRecado">Descrição: </label>
+                    <textarea  id="descricaoRecado" cols="30" rows="5"></textarea>
+                    <button type="submit" class="adicionarRecado">Criar Recado</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div id="pagina_Recados">
@@ -48,13 +67,20 @@
                     mollitia et eos sed odio?</p>
             </div>
         </div>
-    </main>
 
+    </main>
+    
+    <div id="paginacaoRecados">
+        <button onclick="paginaAnterior()">Anterior</button>
+        <p id="paginas">*</p>
+        <button onclick="proximaPagina()">Próximo</button>
+    </div>
+    
     <footer>
         <a href=""><img src="image/icone_linkedln.svg" alt="Icone Linkedln" class="icones_Footer"></a>
         <a href=""><img src="image/icone_github.svg" alt="Icone GitHub" class="icones_Footer"></a>
-
     </footer>
+    <script src="/src/script/home.js"></script>
 </body>
 
 </html>
